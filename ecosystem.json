@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "server",
-      "max_memory_restart": "1G",
+      "max_memory_restart": "250M",
       "instances": "4",
       "exec_mode": "cluster",
       "env": {
@@ -12,7 +12,7 @@
       "interpreter": "./node_modules/.bin/ts-node",
       "script": "./node_modules/.bin/ts-node",
       "args": "-P tsconfig-build.json ./core/scripts/server.ts",
-      "node_args": "--max_old_space_size=1024",
+      "node_args": "--max_old_space_size=250",
       "log_date_format": "YYYY-MM-DD HH:mm:ss",
       "ignore_watch": [
         "core/build/config.json",
